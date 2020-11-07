@@ -1,0 +1,29 @@
+RewriteEngine on
+php_flag register_globals on
+Options -Indexes
+ErrorDocument 403 " Please contact our administraor. "
+RewriteBase /kslfcar/
+
+ErrorDocument 404 "Page Not Found!!!!"
+ErrorDocument 401 "Unauthorized"
+
+
+RewriteRule  ^([a-zA-Z]{2}|[a-zA-Z]{2})$ index.php?site=$1 [L,QSA]
+RewriteRule  ^([a-zA-Z]{2}|[a-zA-Z]{2})/$ index.php?site=$1 [L,QSA]
+#RewriteRule  ^index.html index.php?option=$1 [L,QSA]
+
+RewriteRule  ^([a-zA-Z]{2}|[a-zA-Z]{2})/(.*).ksl$ index.php?site=$1&option=$2 [L,QSA]
+RewriteRule  ^([a-zA-Z]{2}|[a-zA-Z]{2})/(.*)-(.*).ksl$ index.php?site=$1&option=$2&view=$3 [L,QSA]
+
+RewriteRule  ^([a-zA-Z]{2}|[a-zA-Z]{2})/(.*).html$ index.php?site=$1&option=$2 [L,QSA]
+RewriteRule  ^([a-zA-Z]{2}|[a-zA-Z]{2})/(.*)-(.*).html$ index.php?site=$1&option=$2&view=$3 [L,QSA]
+
+#RewriteRule  ^(.*)$ index.php?option=$1 [L,QSA]
+#RewriteRule  ^(.*)-(.*)$ index.php?option=$1&view=$2 [L,QSA]
+
+#RewriteRule  ^ผลบอลย้อนหลัง-(.*)$ index.php?option=result&view=score&DATE=$1 [L,QSA]
+#RewriteRule  ^ผลบอลย้อนหลัง-(.*)/$ index.php?option=result&view=score&DATE=$1 [L,QSA]
+#RewriteRule  ^news-([a-zA-Z0-9_-]+)$ index.php?option=snews&view=souce&ref=$1 [L,QSA]
+#http://www.99ballstep.com/roundcube
+
+

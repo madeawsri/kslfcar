@@ -1,0 +1,93 @@
+@import url(thsarabun/index.css);
+
+div.line {
+    background: black;
+    height: 1px;
+    width: 100%;
+    margin: 10px;
+    border: 0px;
+    padding: 0px;
+}
+
+body{
+    /*margin-top:40px;*/
+    font-family: "THSarabunNew"; }
+.font-th{ font-family: "THSarabunNew"; }
+.hide { display:none; }
+.nav {
+    font-family: "THSarabunNew";
+   /* margin-top: 10px;
+    margin-bottom: 10px;*/
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "THSarabunNew";
+    font-weight:bold;
+}
+.leader{
+    font-family: "THSarabunNew";
+    font-size:20px;
+}
+.jumbotron{
+    font-family: "THSarabunNew";
+    /*height:350px;*/
+    margin-bottom:20px;
+}
+.smaller{
+    font-family: "THSarabunNew";
+    font-size:30px;
+}
+.uu{
+   text-decoration: underline;
+}
+.bg-hide{
+    border: none;
+    background-color: transparent;text-align: center;
+}
+.text-color-red{
+    color: #FF0000;
+}
+.text-color-green{
+    color:#00733e;
+}
+.bb { font-weight: bold  }
+.ii { font-style: italic; }
+.bi { font-style: oblique; }
+.bu {  font-weight: bold;
+    -moz-text-decoration-style: wavy; /* Code for Firefox */
+    text-decoration: underline; }
+.bui { font-style: oblique;
+    -moz-text-decoration-style: wavy; /* Code for Firefox */
+    text-decoration: underline; }
+
+.bb-alert {
+    position: fixed;
+    bottom: 25%;
+    right: 0;
+    margin-bottom: 0;
+    font-size: 1.2em;
+    padding: 1em 1.3em;
+    z-index: 2000;
+}
+
+.alert-info {
+
+    /*color: #31708f;*/
+    background-color: transparent;
+
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
